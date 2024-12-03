@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Medical Registration Form</h1>
+    <p>Fill in the form below to register your medical profile</p>
+    <form id="medicalRegistrationForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group</label>
+        <select id="bloodGroup" name="bloodGroup" required>
+          <option value="" disabled selected>Select your blood group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="medicalHistory">Medical History</label>
+        <textarea id="medicalHistory" name="medicalHistory" placeholder="Provide details about your medical history (if any)" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="idProof">Upload ID Proof (e.g., Passport, License)</label>
+        <input type="file" id="idProof" name="idProof" accept=".pdf, .jpg, .png" required>
+      </div>
+      <div class="form-group">
+        <label for="supportDocs">Supporting Medical Documents (e.g., Prescriptions, Reports)</label>
+        <input type="file" id="supportDocs" name="supportDocs" accept=".pdf, .jpg, .png" multiple required>
+      </div>
+      <button type="submit">Submit Registration</button>
+    </form>
+    <div id="response"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

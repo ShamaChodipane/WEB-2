@@ -1,0 +1,122 @@
+/* Fonts and Colors */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Reflecting a professional and calming medical theme */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Suitable for all form fields */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem; /* Slightly larger font for emphasis */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555; /* Slightly darker color for better contrast */
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444; /* Slightly darker for better readability */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+textarea {
+    resize: none; /* Prevents resizing for cleaner UI */
+    height: 100px;
+}
+
+select {
+    background: #fff;
+    color: #555;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+
+#response {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 1rem;
+}
+
+/* Additional Styling for Medical Registration Form */
+input[type="date"] {
+    color: #555;
+}
+
+textarea {
+    color: #555;
+}
+
+ul {
+    text-align: left; /* Align response list items for better readability */
+    margin: 10px 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
